@@ -1,0 +1,13 @@
+{
+  "name": "dingpa",
+  "scripts": {
+    "start": "node run.js"
+  },
+  "dependencies": {
+    "cheerio": "*",
+    "co": "^4.6.0",
+    "mysql": "*",
+    "node-schedule": "*",
+    "request": "*"
+  }
+}
