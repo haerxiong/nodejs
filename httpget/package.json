@@ -6,6 +6,7 @@
   "dependencies": {
     "cheerio": "*",
     "co": "^4.6.0",
+    "iconv-lite": "^0.4.19",
     "mysql": "*",
     "node-schedule": "*",
     "request": "*"
