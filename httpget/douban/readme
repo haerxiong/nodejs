@@ -1,0 +1,50 @@
+获取豆瓣FM收藏的歌曲列表
+
+歌曲信息json:
+
+{
+	"all_play_sources": [],
+	"albumtitle": "The Beginning",
+	"file_ext": "mp3",
+	"album": "\/subject\/10773116\/",
+	"ssid": "897e",
+	"title": "Notes'n'Words",
+	"subtype": "",
+	"sid": "1904466",
+	"sha256": "8b71ceac2662dffef8b063ff490c1efe23753d6fb3f7afb530051027053e966d",
+	"status": 0,
+	"picture": "https://img3.doubanio.com\/view\/subject\/m\/public\/s11098900.jpg",
+	"update_time": 1493957885,
+	"alert_msg": "",
+	"is_douban_playable": true,
+	"public_time": "2012",
+	"partner_sources": [],
+	"singers": [{
+		"style": [],
+		"name": "ONE OK ROCK",
+		"region": ["日本"],
+		"name_usual": "ONE OK ROCK",
+		"related_site_id": 0,
+		"avatar": "https://img3.doubanio.com\/img\/fmadmin\/large\/916966.jpg",
+		"genre": ["Rock"],
+		"is_site_artist": false,
+		"id": "211"
+	}],
+	"artist": "ONE OK ROCK",
+	"is_royal": false,
+	"url": "http:\/\/mr3.doubanio.com\/0e990c6cbb08f6d62c8a15c6a508664f\/0\/fm\/song\/p1904466_128k.mp3",
+	"length": 289,
+	"release": {
+		"link": "https:\/\/douban.fm\/album\/10773116g1770",
+		"id": "10773116",
+		"ssid": "1770"
+	},
+	"aid": "10773116",
+	"kbps": "128",
+	"available_formats": {
+		"320": 10952,
+		"192": 6866,
+		"128": 4518,
+		"64": 2231
+	}
+}
