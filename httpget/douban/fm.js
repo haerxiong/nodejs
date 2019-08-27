@@ -5,8 +5,8 @@
  */
 var request = require('request');
 var fs = require('fs');
-const username = '用户名';
-const pwd = '密码';
+const username = 'duguwei888@126.com';
+const pwd = 'dugu2558463';
 
 /* 
 	登录豆瓣获取用户标识
@@ -25,7 +25,9 @@ exports.login = function(){
 		    body : 'source=fm&referer=https%3A%2F%2Fdouban.fm%2F&ck='+encodeURI(t)+'&captcha_solution=&captcha_id='
 		}, function(err, response, body) {
 			let setCookie = response.headers['set-cookie'];
-			fs.writeFile('setCookie', setCookie);
+			fs.writeFile('setCookie', setCookie, (err) => {});
+			let res = unescape(body.toString().replace(/\\u/g, '%u'));
+			console.log(res);
 			resove(setCookie);
 		});
 	});
@@ -58,7 +60,7 @@ exports.red = function(cookie){
 			for(let i=0; i<list.length; i++) {
 				txt += list[i].sid + "|";
 			}
-			fs.writeFile('sid_list', title + txt);
+			fs.writeFile('sid_list', title + txt, (err) => {});
 			resove(txt);
 		});
 	});
@@ -94,8 +96,8 @@ exports.infos = function(cookie,sidStr){
 				}
 				txt += '\n' + songs[i].url.replace(/\\/g, '') + "\n\n";
 			}
-			// fs.writeFile('songs_info', txt);
-			console.log(txt);
+			fs.writeFile('songs_info', txt, (err) => {});
+			console.log(sidStr);
 
 			resove(songs);
 		});
